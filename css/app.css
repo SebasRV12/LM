@@ -1,0 +1,108 @@
+#Titulo{
+    font-size: 22px;
+    color: rgb(10, 43, 189);
+}
+#Ingreso{
+    background-color: rgb(43, 108, 206); 
+}
+#registro, #principal, #redactar, #camera{
+    display: none;
+    background-color: rgb(43, 108, 206);
+}
+
+.btn {
+    background: #11c0f5;
+    background-image: -webkit-linear-gradient(top, #11c0f5, #ffffff);
+    background-image: -moz-linear-gradient(top, #11c0f5, #ffffff);
+    background-image: -ms-linear-gradient(top, #11c0f5, #ffffff);
+    background-image: -o-linear-gradient(top, #11c0f5, #ffffff);
+    background-image: linear-gradient(to bottom, #11c0f5, #ffffff);
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    font-family: Arial;
+    color: #0d030d;
+    font-size: 22px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  #btnRegistrar{
+    background: #11c0f5;
+    background-image: -webkit-linear-gradient(top, #11c0f5, #ffffff);
+    background-image: -moz-linear-gradient(top, #11c0f5, #ffffff);
+    background-image: -ms-linear-gradient(top, #11c0f5, #ffffff);
+    background-image: -o-linear-gradient(top, #11c0f5, #ffffff);
+    background-image: linear-gradient(to bottom, #11c0f5, #ffffff);
+    -webkit-border-radius: 60;
+    -moz-border-radius: 60;
+    border-radius: 60px;
+    font-family: Arial;
+    color: #0d030d;
+    font-size: 22px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  #bienvenida{
+      width: 100%;
+      color: salmon;
+      font-size: 18px;
+  }
+  .titulo{
+      text-align: center;
+      font-size: 18px;
+      color:rgb(10, 43, 189);
+      width: 100%;
+  }
+
+  .errorCampo{
+      border-color: red;
+      border-width: 2px;
+  }
+
+  .botonCerrar{
+      position:absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+      color: seagreen;
+      text-decoration: none;
+  }
+  #menu{
+      width: 100%;
+  }
+  .menu{
+      width: 0%;
+      height: 100%;
+      position:fixed;
+      top: 0;
+      left: 0;
+      background-color: rgb(29, 15, 155);
+      overflow-x: hidden;
+      padding-top: 60px;
+      transition: 0.5s;
+      z-index: 1;
+  }
+  .opciones{
+      text-decoration: none;
+      color: rgb(29, 15, 155);
+      padding-left: 20px;
+  }
+  .opciones:visited{
+    color: rgb(51, 102, 212);
+  }
+  .iconoMenu{
+      color:azure;
+  }
+  .inputget{
+      display: none;
+  }
+  .container-photo{
+      background-color: blue;
+      margin-bottom: 3px;
+      text-align: center;
+  }
+  .photo{
+      height: 200px;
+      object-fit: cover;
+  }

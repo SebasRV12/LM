@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         <meta charset="UTF-8"><!--vamos a usar caracteres de idiomas occidentales-->
+         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+         <title></title>
+         <link rel="manifest" href="/manifest.json"/>
+         <meta name="theme-color" content="#333"/>
+         <link rel="stylesheet" type="text/css" href="css/app.css"/>
+         <script src="js/feather.min.js"></script>
+     </head>
+     <body>
+        <div id="ingreso">
+            <span id="Titulo">LET'S MEET</span>
+            <br>
+            Correo:
+            <input type="email" id="correoI"/>
+            <br>
+            Contraseña:
+            <input type="password" id="contrasenaI"/>
+            <br><br>
+            <button id="btnIngresar" class="btn"> Comencemos</button>
+            <br><br>
+            <span id="btnRegistrar">Registrate</span>
+        </div>
+        <div id="registro">
+            Correo
+            <input type="email" id="correoR">
+            <br>
+            Nombre
+            <input type="text" id="nombreR">
+            <br>
+            Contraseña
+            <input type="password" id="contrasenaR">
+            <br>
+            Confirmar contraseña
+            <input type="password" id="confirmacionR">
+            <br>
+            Fecha de nacimiento
+            <input type="date" id="fechaR">
+            <button id="btnRegistro" class="btn">Registrar</button>
+         </div>
+        <div id="principal">
+            <div id="menu"><samp id="btnMenu" onclick="abrirBarra()"><i data-feather= "align-justify"></i></samp></div>
+            <div class="titulo">LET'S MEET</div><br>
+            <div id="binvenida"BIENVENIDO ><span id="nombreP"></span></div>
+        </div>
+        <div id="barraMenu" class="menu">
+            <a href="javascript:void(0)" class="botonCerrar" onclick="cerrarBarra()">&times;</a>
+            <a href="javascript:void(0)" onclick="mensaje()"class="opciones"><i data-feather= "inbox" class="iconoMenu"></i>&nbsp;Mensajes</a><br>
+            <a href="javascript:void(0)" onclick="tomarFoto()" class="opciones"><i data-feather="camera"></i>&nbsp;Fotos</a><br>
+            <a href="javascript:void(0)"onclick="cerrarSesion()" class="opciones"><i data-feather= "log-out" class="iconoMenu"></i>&nbsp;Cerrar Seción</a><br>
+        </div>
+        <div id="redactar">
+            Para:<br>
+            <input type="text" id="correoM"/>
+            <br>
+            Mensaje:<br>
+            <input type="text" id="mensajeM">
+            <br>
+            <button id="enviarM" class="btn">Enviar</button>
+        </div>
+        <div id = "mensajes">
+        </div>
+        <div id = "camara">
+            <div class = "container-photo">
+                <img id = "photo" src = "" class="photo">
+            </div>
+            <input type="file" accept="image/*" capture="camera" id="camera" class="inputget" type = "file">
+            <button id="opens">Foto</button>&nbsp;&nbsp;
+            <button id="mapa">Mapa</button>
+            <input id="lugar" type="text">
+        </div>
+            <script src="js/app.js"></script>
+            <script>
+                feather.replace()
+            </script>
+     </body>
+</html>
