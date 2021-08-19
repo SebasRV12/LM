@@ -254,3 +254,10 @@ function cerrarSesion(){
     document.getElementById("camara").style.display = "none";
     document.getElementById("ingreso").style.display = "block";
 } //cerrarSesion
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('../sw.js').then( () => {
+        console.log('Service Worker Registered')
+      });
+    });
+  }//active el elemento de sw, tiene que detectar que se activa cuando carga la ventana y le decimos donde va a encontrar el elemento
